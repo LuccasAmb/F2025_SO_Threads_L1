@@ -11,8 +11,13 @@ public class ThreadId extends Thread {
 
 	@Override
 	public void run() {
+		showId();
+	}
+
+	private void showId() {
 		int tid = (int) getId();
 		System.out.println(tid);
+		
 	}
 	
 }
